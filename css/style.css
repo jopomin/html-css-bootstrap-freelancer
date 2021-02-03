@@ -1,0 +1,170 @@
+.debug [class^="col-"] {
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #2c3e50;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#logo {
+  background: orange;
+  height: 90px;
+}
+
+#menu {
+  background: orange;
+  height: 90px;
+}
+
+.jumbo {
+  background: #1abc9c;
+  margin-top: 90px;
+  height: 580px;
+  width: 100%;
+  position: relative;
+}
+
+.jumbo-elements {
+  background: rgba(0, 0, 0, 0.3);
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  padding: 80px 0 60px;
+}
+
+.portfolio {
+  background: #fff;
+  width: 100%;
+}
+
+.titles {
+  height: 50px;
+  background: orange;
+  margin-bottom: 20px;
+}
+
+.lines {
+  height: 30px;
+  background: darkred;
+  margin-bottom: 20px;
+}
+
+.port_box {
+  padding: 10px;
+  height: 300px;
+}
+
+.port_element {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tondo-port {
+  background: yellow;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#casa {
+  background: #ba4b63;
+}
+
+#torta {
+  background: #1ea4b6;
+}
+
+#circo {
+  background: #140f0f;
+}
+
+#gamepad {
+  background: #1c83c1;
+}
+
+#cassaforte {
+  background: #0e38b5;
+}
+
+#submarine {
+  background: #ccb2a3;
+}
+
+.about {
+  background: #1abc9c;
+  width: 100%;
+}
+
+.about_text_box {
+  height: 300px;
+  padding: 10px;
+}
+
+.about_text {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+  background: #fff;
+  width: 100%;
+}
+
+.contact_form {
+  background: purple;
+  height: 600px;
+}
+
+footer .ft-top,
+footer .ft-bott {
+  padding: 20px 0;
+}
+
+.ft-top {
+  background: #3a546d;
+}
+
+.ft_block {
+  height: 180px;
+  padding: 10px;
+}
+
+.ft_content {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.ft-bott {
+  background: #2c3e50;
+}
+
+.ft_line {
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
