@@ -4,122 +4,174 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap - Esercizio 3 Febbraio</title>
   </head>
   <body>
     <header>
-        <nav>
+        <nav class="text-uppercase">
           <div class="container">
             <div class="row">
-              <div id="logo" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-              <div id="menu" class="col-lg-offset-2 col-lg-6 col-md-offset-2 col-md-6 col-sm-offset-2 col-sm-6 col-xs-offset-2 col-xs-6"></div>
+              <div id="logo" class="col-xs-6">
+                <a href="#" class="unstyled">Start Bootstrap</a>
+              </div>
+              <div id="menu" class="col-xs-6 text-right">
+                <ul class="ms_menu_list list-inline hidden-xs">
+                  <li class="list-inline-item">portfolio</li>
+                  <li class="list-inline-item">about</li>
+                  <li class="list-inline-item">contact</li>
+                </ul>
+                <div class="text-right">
+                  <button type="button" class="btn btn-primary text-uppercase visible-xs">menu<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
-        <div class="jumbo">
-          <div class="container">
-            <div class="jumbo-elements">
+        <div class="ms_jumbo">
+          <div class="ms_wrapper">
+            <div class="container-fluid">
+              <div class="jumbo-elements text-center">
+                <img src="img/avatar-home.svg" alt="Avatar Home">
+                <h1 class="text-uppercase">Start Bootstrap</h1>
+                <div class="ms_stella">
+                  <hr class="ms_hr ms_hr_wh">
+                  <span class="glyphicon glyphicon-star ms_g_st_wh"></span>
+                  <hr class="ms_hr ms_hr_wh">
+                </div>
+                <p>Graphic Artist - Web Designer - Illustrator</p>
+              </div>
             </div>
           </div>
         </div>
     </header>
     <main>
-      <section class="portfolio">
+      <section id="portfolio">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titles"></div>
+            <h2 class="col-xs-12 text-center text-uppercase">Portfolio</h2>
+          </div>
+          <div class="ms_stella text-center">
+            <hr class="ms_hr ms_hr_bk">
+            <span class="glyphicon glyphicon-star ms_g_st_bk"></span>
+            <hr class="ms_hr ms_hr_bk">
           </div>
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lines"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="casa" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/cabin.png" alt="Casetta">
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="torta" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/cake.png" alt="Torta">
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="circo" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/circus.png" alt="Circo">
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="gamepad" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/game.png" alt="Gamepad">
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="cassaforte" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/safe.png" alt="Cassaforte">
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col sm-12 col-xs-12 port_box">
-              <div id="submarine" class="port_element">
-                <div class="tondo-port"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="port_box">
+                <img src="img/submarine.png" alt="Sottomarino">
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titles"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lines"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about_text_box">
-              <div class="about_text"></div>
+      <section id="about">
+        <div class="ms_wrapper">
+          <div class="container">
+            <h2 class="text-center text-uppercase">
+              About
+            </h2>
+            <div class="ms_stella text-center">
+              <hr class="ms_hr ms_hr_wh">
+              <span class="glyphicon glyphicon-star ms_g_st_wh"></span>
+              <hr class="ms_hr ms_hr_wh">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about_text_box">
-              <div class="about_text"></div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 about_text">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 about_text">
+                <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+              </div>
+            </div>
+            <div class="text-center ms_btn_dwn_cont">
+              <button type="button" class="btn btn-primary ms_btn_dwn btn-lg text-center"><span class="glyphicon glyphicon-menu-save"></span>Free Download</button>
             </div>
           </div>
         </div>
       </section>
       <section class="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titles"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lines"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 col-xs-offset-1 contact_form"></div>
+        <div class="ms_contact_wrapper">
+          <div class="container">
+            <div class="row">
+              <h2 class="col-xs-12 text-center text-uppercase">Contact Me</h2>
+            </div>
+            <div class="ms_stella text-center">
+              <hr class="ms_hr ms_hr_bk">
+              <span class="glyphicon glyphicon-star ms_g_st_bk"></span>
+              <hr class="ms_hr ms_hr_bk">
+            </div>
+            <form>
+              <div class="form-group text-capitalize">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPhone">Phone Number</label>
+                <input type="text" id="exampleInputPhone">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputMess">Message</label>
+                <textarea id="exampleInputMess" name="Message" rows="8" cols="80"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary ms_btn_send btn-lg">Send</button>
+            </form>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="ft-top">
+      <div class="ft-top text-center">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ft_block">
-              <div class="ft_content"></div>
+            <div class="col-lg-4 col-md-4 ms_ft_top_block">
+              <h3 class="text-uppercase">Location</h3>
+              <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ft_block">
-              <div class="ft_content"></div>
+            <div class="col-lg-4 col-md-4 ms_ft_top_block">
+              <h3 class="text-uppercase">Around the Web</h3>
+              <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ft_block">
-              <div class="ft_content"></div>
+            <div class="col-lg-4 col-md-4 ms_ft_top_block">
+              <h3 class="text-uppercase">About Freelancer</h3>
+              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="ft-bott">
+      <div class="ft-bott text-center">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ft_line"></div>
-          </div>
+          <p>Copyright © Your Website 2020</p>
         </div>
       </div>
     </footer>

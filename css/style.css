@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
 nav {
   background: #2c3e50;
   height: 90px;
@@ -19,64 +29,148 @@ nav {
 }
 
 #logo {
-  background: orange;
   height: 90px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 800;
+  line-height: 90px;
+}
+
+#logo a {
+  color: #fff;
 }
 
 #menu {
-  background: orange;
   height: 90px;
+  line-height: 90px;
 }
 
-.jumbo {
+#menu button {
+  margin-top: 26px;
+}
+
+.ms_menu_list {
+  color: #fff;
+}
+
+.ms_menu_list li {
+  margin-right: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.ms_menu_list li:last-child {
+  margin-right: 0;
+}
+
+.btn-primary {
+  background: #1abc9c;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.glyphicon-menu-hamburger {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.ms_jumbo {
   background: #1abc9c;
   margin-top: 90px;
-  height: 580px;
+  padding: 50px 0 90px;
   width: 100%;
-  position: relative;
+  color: #fff;
 }
 
-.jumbo-elements {
-  background: rgba(0, 0, 0, 0.3);
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.ms_wrapper {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.jumbo-elements img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+.ms_stella {
+  margin: 25px 0;
+}
+
+.ms_stella > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ms_hr {
+  width: 100px;
+  height: 4px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.ms_hr_wh {
+  background: #fff;
+  color: #fff;
+}
+
+.ms_hr_bk {
+  background: #2c3e50;
+  color: #2c3e50;
+}
+
+.ms_jumbo p {
+  font-size: 1.35em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.glyphicon-star {
+  font-size: 2.5em;
+}
+
+.ms_g_st_wh {
+  color: #fff;
+}
+
+.ms_g_st_bk {
+  color: #2c3e50;
+}
+
+/* Main */
+
+h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 section {
   padding: 80px 0 60px;
 }
 
-.portfolio {
+#portfolio {
   background: #fff;
   width: 100%;
 }
 
-.titles {
-  height: 50px;
-  background: orange;
-  margin-bottom: 20px;
-}
-
-.lines {
-  height: 30px;
-  background: darkred;
-  margin-bottom: 20px;
-}
-
 .port_box {
-  padding: 10px;
-  height: 300px;
+  background: red;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.port_element {
-  height: 100%;
+.port_box img {
   width: 100%;
-  border-radius: 10px;
-  position: relative;
 }
 
 .tondo-port {
@@ -114,31 +208,61 @@ section {
   background: #ccb2a3;
 }
 
-.about {
+#about {
   background: #1abc9c;
   width: 100%;
 }
 
-.about_text_box {
-  height: 300px;
-  padding: 10px;
+#about h2 {
+  color: #fff;
 }
 
 .about_text {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
 }
 
-.contact {
+.about_text p {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.ms_btn_dwn_cont {
+  margin-top: 20px;
+}
+
+.ms_btn_dwn {
+  background: #1abc9c;
+  border: 1px solid #fff;
+  margin: 0 auto;
+}
+
+.glyphicon-menu-save {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+#contact {
   background: #fff;
   width: 100%;
+}
+
+.ms_contact_wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact_form {
   background: purple;
   height: 600px;
 }
+
+.ms_btn_send {
+  background: #1abc9c;
+  border: none;
+  padding: 20px 30px;
+}
+
+/* Footer */
 
 footer .ft-top,
 footer .ft-bott {
@@ -147,24 +271,29 @@ footer .ft-bott {
 
 .ft-top {
   background: #3a546d;
+  color: #fff;
 }
 
-.ft_block {
-  height: 180px;
-  padding: 10px;
+.ft-top h3 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 
-.ft_content {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+.ft-top p {
+  font-size: 1.3em;
+}
+
+.ms_ft_top_block {
+  margin: 50px 0;
 }
 
 .ft-bott {
   background: #2c3e50;
 }
 
-.ft_line {
-  height: 20px;
-  background: rgba(0, 0, 0, 0.3);
+.ft-bott p {
+  font-size: 0.9em;
+  color: #fff;
+  margin: 5px;
 }
