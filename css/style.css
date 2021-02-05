@@ -18,62 +18,34 @@ a {
 
 /* Header */
 
-nav {
+.navbar.ms_navbar {
   background: #2c3e50;
-  height: 90px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+  letter-spacing: 1px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 #logo {
-  height: 90px;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-  font-weight: 800;
-  line-height: 90px;
-}
-
-#logo a {
   color: #fff;
-}
-
-#menu {
-  height: 90px;
-  line-height: 90px;
-}
-
-#menu button {
-  margin-top: 26px;
-}
-
-.ms_menu_list {
-  color: #fff;
-}
-
-.ms_menu_list li {
-  margin-right: 20px;
-  font-size: 1.2em;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.ms_menu_list li:last-child {
-  margin-right: 0;
-}
-
-.btn-primary {
-  background: #1abc9c;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.glyphicon-menu-hamburger {
-  color: #fff;
-  margin-left: 5px;
-  font-size: 0.9em;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .ms_jumbo {
@@ -90,7 +62,7 @@ nav {
   margin: 0 auto;
 }
 
-.jumbo-elements img {
+.ms_jumbo-elements img {
   width: 180px;
   margin-bottom: 20px;
 }

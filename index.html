@@ -10,29 +10,32 @@
   </head>
   <body>
     <header>
-        <nav class="text-uppercase">
-          <div class="container">
-            <div class="row">
-              <div id="logo" class="col-xs-6">
-                <a href="#" class="unstyled">Start Bootstrap</a>
-              </div>
-              <div id="menu" class="col-xs-6 text-right">
-                <ul class="ms_menu_list list-inline hidden-xs">
-                  <li class="list-inline-item">portfolio</li>
-                  <li class="list-inline-item">about</li>
-                  <li class="list-inline-item">contact</li>
-                </ul>
-                <div class="text-right">
-                  <button type="button" class="btn btn-primary text-uppercase visible-xs">menu<span class="glyphicon glyphicon-menu-hamburger"></span></button>
-                </div>
-              </div>
-            </div>
+      <nav class="navbar navbar-default navbar-fixed-top ms_navbar text-uppercase">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo" class="navbar-brand" href="#">Start Bootstrap</a>
           </div>
-        </nav>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
         <div class="ms_jumbo">
-          <div class="ms_wrapper">
-            <div class="container-fluid">
-              <div class="jumbo-elements text-center">
+          <div class="container">
+            <div class=".ms_jumbo-elements text-center">
                 <img src="img/avatar-home.svg" alt="Avatar Home">
                 <h1 class="text-uppercase">Start Bootstrap</h1>
                 <div class="ms_stella">
@@ -43,7 +46,6 @@
                 <p>Graphic Artist - Web Designer - Illustrator</p>
               </div>
             </div>
-          </div>
         </div>
     </header>
     <main>
