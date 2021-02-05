@@ -259,7 +259,14 @@ section {
 .ms_btn_send {
   background: #1abc9c;
   border: none;
-  padding: 20px 30px;
+  padding: 25px 38px;
+  margin: 10px 0;
+}
+
+.ms_form_element {
+  padding: 30px 20px;
+  border: none;
+  font-size: 1.5em;
 }
 
 /* Footer */
@@ -277,7 +284,7 @@ footer .ft-bott {
 .ft-top h3 {
   font-weight: 700;
   font-size: 2em;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .ft-top p {
@@ -286,6 +293,36 @@ footer .ft-bott {
 
 .ms_ft_top_block {
   margin: 50px 0;
+}
+
+.ms_ft_top_block p a {
+  color: #1abc9c;
+}
+
+.ms_btn_ft {
+  margin: 0 5px;
+}
+
+.ms_btn_round {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.ms_btn_outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+a.ms_btn_ft {
+  color: #fff;
+}
+
+.fa-facebook {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
 }
 
 .ft-bott {
